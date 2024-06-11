@@ -4,12 +4,11 @@ Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "msmask32.ocx"
 Begin VB.Form FormDR 
    BackColor       =   &H80000002&
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "  DELIVERY RECEIPT"
+   Caption         =   "MS COMPANY INCORPORATED  "
    ClientHeight    =   10695
    ClientLeft      =   45
    ClientTop       =   375
    ClientWidth     =   16905
-   ControlBox      =   0   'False
    FillColor       =   &H000000FF&
    BeginProperty Font 
       Name            =   "MS Sans Serif"
@@ -23,7 +22,6 @@ Begin VB.Form FormDR
    Icon            =   "FormDR.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   Moveable        =   0   'False
    ScaleHeight     =   10695
    ScaleMode       =   0  'User
    ScaleWidth      =   25196.62
@@ -42,7 +40,7 @@ Begin VB.Form FormDR
       ForeColor       =   &H00004000&
       Height          =   1665
       Left            =   14160
-      TabIndex        =   61
+      TabIndex        =   60
       Top             =   6360
       Visible         =   0   'False
       Width           =   1545
@@ -59,14 +57,14 @@ Begin VB.Form FormDR
          Height          =   510
          Left            =   240
          MaxLength       =   50
-         TabIndex        =   62
+         TabIndex        =   61
          Top             =   270
          Width           =   7215
       End
       Begin MSComctlLib.ListView lvwDRSearch 
          Height          =   5150
          Left            =   0
-         TabIndex        =   63
+         TabIndex        =   62
          Top             =   960
          Width           =   16900
          _ExtentX        =   29819
@@ -111,7 +109,7 @@ Begin VB.Form FormDR
       Left            =   9600
       Locked          =   -1  'True
       MaxLength       =   13
-      TabIndex        =   85
+      TabIndex        =   84
       TabStop         =   0   'False
       Top             =   8760
       Width           =   2348
@@ -128,10 +126,10 @@ Begin VB.Form FormDR
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00004000&
-      Height          =   6315
+      Height          =   7035
       Left            =   3360
-      TabIndex        =   82
-      Top             =   2280
+      TabIndex        =   81
+      Top             =   1560
       Visible         =   0   'False
       Width           =   9435
       Begin VB.CommandButton Command1 
@@ -147,18 +145,18 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   495
          Left            =   315
-         TabIndex        =   83
+         TabIndex        =   82
          Top             =   7250
          Width           =   7100
       End
       Begin MSComctlLib.ListView lvwInv 
-         Height          =   5805
+         Height          =   6600
          Left            =   240
-         TabIndex        =   84
-         Top             =   300
+         TabIndex        =   83
+         Top             =   240
          Width           =   8970
          _ExtentX        =   15822
-         _ExtentY        =   10239
+         _ExtentY        =   11642
          View            =   3
          LabelEdit       =   1
          LabelWrap       =   -1  'True
@@ -187,7 +185,7 @@ Begin VB.Form FormDR
       Enabled         =   0   'False
       Height          =   375
       Left            =   12480
-      TabIndex        =   69
+      TabIndex        =   68
       Top             =   120
       Visible         =   0   'False
       Width           =   1455
@@ -206,7 +204,7 @@ Begin VB.Form FormDR
       ForeColor       =   &H00004000&
       Height          =   1275
       Left            =   240
-      TabIndex        =   53
+      TabIndex        =   52
       Top             =   5640
       Visible         =   0   'False
       Width           =   2115
@@ -289,7 +287,7 @@ Begin VB.Form FormDR
       ForeColor       =   &H00004000&
       Height          =   1905
       Left            =   14160
-      TabIndex        =   66
+      TabIndex        =   65
       Top             =   2400
       Visible         =   0   'False
       Width           =   2235
@@ -306,7 +304,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   540
          Left            =   250
-         TabIndex        =   77
+         TabIndex        =   76
          Top             =   7200
          Width           =   6450
       End
@@ -323,7 +321,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   540
          Left            =   250
-         TabIndex        =   70
+         TabIndex        =   69
          Top             =   6600
          Width           =   6450
       End
@@ -453,7 +451,7 @@ Begin VB.Form FormDR
       ForeColor       =   &H00004000&
       Height          =   1695
       Left            =   14160
-      TabIndex        =   45
+      TabIndex        =   44
       Top             =   4440
       Visible         =   0   'False
       Width           =   2235
@@ -468,12 +466,12 @@ Begin VB.Form FormDR
             Strikethrough   =   0   'False
          EndProperty
          Height          =   420
-         ItemData        =   "FormDR.frx":08CA
+         ItemData        =   "FormDR.frx":1E72
          Left            =   240
-         List            =   "FormDR.frx":08DD
+         List            =   "FormDR.frx":1E85
          Locked          =   -1  'True
          Style           =   2  'Dropdown List
-         TabIndex        =   76
+         TabIndex        =   75
          Top             =   320
          Width           =   6450
       End
@@ -556,7 +554,7 @@ Begin VB.Form FormDR
       ForeColor       =   &H00004000&
       Height          =   2505
       Left            =   240
-      TabIndex        =   46
+      TabIndex        =   45
       Top             =   2400
       Visible         =   0   'False
       Width           =   2715
@@ -571,18 +569,18 @@ Begin VB.Form FormDR
             Strikethrough   =   0   'False
          EndProperty
          Height          =   555
-         ItemData        =   "FormDR.frx":092B
+         ItemData        =   "FormDR.frx":1ED3
          Left            =   2520
-         List            =   "FormDR.frx":0944
+         List            =   "FormDR.frx":1EEC
          Style           =   2  'Dropdown List
-         TabIndex        =   81
+         TabIndex        =   80
          Top             =   2400
          Width           =   4100
       End
       Begin MSComctlLib.ListView lvwPhase 
          Height          =   495
          Left            =   1080
-         TabIndex        =   80
+         TabIndex        =   79
          Top             =   1440
          Visible         =   0   'False
          Width           =   1215
@@ -613,7 +611,7 @@ Begin VB.Form FormDR
       Begin MSComctlLib.ListView lvwBlock 
          Height          =   495
          Left            =   1080
-         TabIndex        =   79
+         TabIndex        =   78
          Top             =   960
          Visible         =   0   'False
          Width           =   1155
@@ -654,7 +652,7 @@ Begin VB.Form FormDR
          Height          =   465
          Left            =   240
          MaxLength       =   50
-         TabIndex        =   78
+         TabIndex        =   77
          Top             =   1440
          Visible         =   0   'False
          Width           =   675
@@ -675,7 +673,7 @@ Begin VB.Form FormDR
          Left            =   5160
          Locked          =   -1  'True
          MaxLength       =   13
-         TabIndex        =   75
+         TabIndex        =   74
          Top             =   5520
          Width           =   1455
       End
@@ -861,7 +859,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   23
          Left            =   480
-         TabIndex        =   68
+         TabIndex        =   67
          Top             =   2640
          Width           =   675
       End
@@ -870,7 +868,7 @@ Begin VB.Form FormDR
          BorderStyle     =   1  'Fixed Single
          Height          =   600
          Left            =   2500
-         TabIndex        =   64
+         TabIndex        =   63
          Top             =   1080
          Width           =   4100
       End
@@ -890,7 +888,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   15
          Left            =   495
-         TabIndex        =   55
+         TabIndex        =   54
          Top             =   4250
          Width           =   1290
       End
@@ -911,14 +909,14 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   13
          Left            =   1680
-         TabIndex        =   52
+         TabIndex        =   51
          Top             =   345
          Width           =   3600
       End
       Begin VB.Image Image2 
          Height          =   495
          Left            =   360
-         Picture         =   "FormDR.frx":098E
+         Picture         =   "FormDR.frx":1F36
          Stretch         =   -1  'True
          Top             =   300
          Width           =   600
@@ -939,7 +937,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   10
          Left            =   495
-         TabIndex        =   51
+         TabIndex        =   50
          Top             =   6360
          Width           =   1110
       End
@@ -959,7 +957,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   8
          Left            =   495
-         TabIndex        =   50
+         TabIndex        =   49
          Top             =   5700
          Width           =   1410
       End
@@ -979,7 +977,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   7
          Left            =   480
-         TabIndex        =   49
+         TabIndex        =   48
          Top             =   5000
          Width           =   1005
       End
@@ -999,7 +997,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   1
          Left            =   500
-         TabIndex        =   48
+         TabIndex        =   47
          Top             =   1920
          Width           =   1245
       End
@@ -1019,7 +1017,7 @@ Begin VB.Form FormDR
          Height          =   375
          Index           =   0
          Left            =   495
-         TabIndex        =   47
+         TabIndex        =   46
          Top             =   3480
          Width           =   1275
       End
@@ -1037,7 +1035,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   600
          Left            =   240
-         TabIndex        =   54
+         TabIndex        =   53
          Top             =   240
          Width           =   6400
       End
@@ -1059,7 +1057,7 @@ Begin VB.Form FormDR
       Left            =   14400
       Locked          =   -1  'True
       MaxLength       =   13
-      TabIndex        =   59
+      TabIndex        =   58
       TabStop         =   0   'False
       Top             =   8750
       Width           =   2348
@@ -1081,7 +1079,7 @@ Begin VB.Form FormDR
       Left            =   12000
       Locked          =   -1  'True
       MaxLength       =   13
-      TabIndex        =   56
+      TabIndex        =   55
       TabStop         =   0   'False
       Top             =   8750
       Width           =   2348
@@ -1100,7 +1098,7 @@ Begin VB.Form FormDR
       EndProperty
       Height          =   850
       Left            =   0
-      TabIndex        =   42
+      TabIndex        =   41
       Top             =   9600
       Width           =   16874
       Begin VB.CommandButton cmdReport 
@@ -1122,7 +1120,7 @@ Begin VB.Form FormDR
          Width           =   2000
       End
       Begin VB.CommandButton cmdExit 
-         Caption         =   "E&XIT"
+         Caption         =   "MAIN MENU"
          BeginProperty Font 
             Name            =   "Arial Narrow"
             Size            =   9.75
@@ -1133,11 +1131,11 @@ Begin VB.Form FormDR
             Strikethrough   =   0   'False
          EndProperty
          Height          =   540
-         Left            =   14650
+         Left            =   14055
          Style           =   1  'Graphical
          TabIndex        =   6
          Top             =   120
-         Width           =   2000
+         Width           =   2595
       End
       Begin VB.CommandButton cmdCancel 
          Caption         =   "CANCEL"
@@ -1234,13 +1232,13 @@ Begin VB.Form FormDR
       End
    End
    Begin MSComctlLib.ListView lvwDR 
-      Height          =   6300
+      Height          =   7020
       Left            =   0
-      TabIndex        =   41
-      Top             =   2300
+      TabIndex        =   40
+      Top             =   1600
       Width           =   16905
       _ExtentX        =   29819
-      _ExtentY        =   11113
+      _ExtentY        =   12383
       View            =   3
       LabelEdit       =   1
       LabelWrap       =   -1  'True
@@ -1280,7 +1278,7 @@ Begin VB.Form FormDR
       Height          =   1600
       Left            =   0
       TabIndex        =   36
-      Top             =   700
+      Top             =   0
       Width           =   16907
       Begin VB.TextBox txtCHINum 
          BackColor       =   &H80000003&
@@ -1466,7 +1464,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   300
          Left            =   4600
-         TabIndex        =   74
+         TabIndex        =   73
          Top             =   1080
          Width           =   615
       End
@@ -1485,7 +1483,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   300
          Left            =   4600
-         TabIndex        =   73
+         TabIndex        =   72
          Top             =   675
          Width           =   480
       End
@@ -1504,7 +1502,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   300
          Left            =   4600
-         TabIndex        =   72
+         TabIndex        =   71
          Top             =   255
          Width           =   555
       End
@@ -1523,7 +1521,7 @@ Begin VB.Form FormDR
          EndProperty
          Height          =   300
          Left            =   255
-         TabIndex        =   71
+         TabIndex        =   70
          Top             =   1080
          Width           =   615
       End
@@ -1543,7 +1541,7 @@ Begin VB.Form FormDR
          Height          =   300
          Index           =   4
          Left            =   255
-         TabIndex        =   67
+         TabIndex        =   66
          Top             =   675
          Width           =   915
       End
@@ -1563,7 +1561,7 @@ Begin VB.Form FormDR
          Height          =   300
          Index           =   14
          Left            =   8800
-         TabIndex        =   65
+         TabIndex        =   64
          Top             =   675
          Width           =   915
       End
@@ -1644,7 +1642,7 @@ Begin VB.Form FormDR
       Height          =   300
       Index           =   3
       Left            =   11280
-      TabIndex        =   86
+      TabIndex        =   85
       Top             =   9240
       Width           =   720
    End
@@ -1664,7 +1662,7 @@ Begin VB.Form FormDR
       Height          =   300
       Index           =   21
       Left            =   15600
-      TabIndex        =   60
+      TabIndex        =   59
       Top             =   9255
       Width           =   660
    End
@@ -1684,7 +1682,7 @@ Begin VB.Form FormDR
       Height          =   375
       Index           =   19
       Left            =   8280
-      TabIndex        =   58
+      TabIndex        =   57
       Top             =   8880
       Width           =   1035
    End
@@ -1704,7 +1702,7 @@ Begin VB.Form FormDR
       Height          =   300
       Index           =   17
       Left            =   13320
-      TabIndex        =   57
+      TabIndex        =   56
       Top             =   9240
       Width           =   1035
    End
@@ -1723,9 +1721,10 @@ Begin VB.Form FormDR
       EndProperty
       ForeColor       =   &H00004000&
       Height          =   240
-      Left            =   840
-      TabIndex        =   44
-      Top             =   360
+      Left            =   1080
+      TabIndex        =   43
+      Top             =   9120
+      Visible         =   0   'False
       Width           =   690
    End
    Begin VB.Label lblComp 
@@ -1743,36 +1742,20 @@ Begin VB.Form FormDR
       EndProperty
       ForeColor       =   &H00004000&
       Height          =   240
-      Left            =   840
-      TabIndex        =   43
-      Top             =   120
+      Left            =   1080
+      TabIndex        =   42
+      Top             =   8760
+      Visible         =   0   'False
       Width           =   1125
    End
    Begin VB.Image Image1 
       Height          =   600
-      Left            =   0
-      Picture         =   "FormDR.frx":4015
+      Left            =   240
+      Picture         =   "FormDR.frx":55BD
       Stretch         =   -1  'True
-      Top             =   45
-      Width           =   738
-   End
-   Begin VB.Label Label3 
-      BackColor       =   &H00FFFFFF&
-      BorderStyle     =   1  'Fixed Single
-      BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   720
-      Left            =   -120
-      TabIndex        =   40
-      Top             =   0
-      Width           =   17355
+      Top             =   8760
+      Visible         =   0   'False
+      Width           =   735
    End
 End
 Attribute VB_Name = "FormDR"
@@ -1781,16 +1764,16 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-Private mmsADOConn             As ADODB.Connection
-Private mmsAdoCmd              As ADODB.Command
-Private mmsADORst              As ADODB.Recordset
+Private mmsADOConn              As ADODB.Connection
+Private mmsAdoCmd               As ADODB.Command
+Private mmsADORst               As ADODB.Recordset
 Public strsql, EncodeMode       As String
 
 Private DRLI       As ListItem
 Private ItemEdit   As Integer
 
-Private InvID, DRID, DRBuyer, DRTranspo, DRRemarks          As String
-Private StartMonth, EndMonth                                As String
+Private InvID, DRID, DRBuyer, DRTranspo, DRRemarks                      As String
+Private StartMonth, EndMonth                                            As String
 Private DRTotalQty, DRItemNo, DRTotalBdFt, DRTotalCuM, DRTotalPcs       As Long
 Private Sub Command2_Click()
         'strsql = "Update DRDetails SET DRARNum = '" & "-" & "'"
@@ -1817,11 +1800,17 @@ Private Sub Command2_Click()
         'CommandExecute
 End Sub
 Private Sub Form_Load()
-   EncodeMode = "START"
+   EncodeMode = "DR"
    ConnectToDB
    SetlvwDR
    lblComp.Caption = FormMainMenu.lblComp.Caption
    lblHeader.Caption = FormMainMenu.lblHeader.Caption
+End Sub
+Private Sub Form_Unload(Cancel As Integer)
+     ClearBox
+     ClearFrame
+     Unload Me
+     FormMainMenu.Show
 End Sub
 Private Sub GetFrom()
    mmsAdoCmd.CommandText = "Select * from Settings"
@@ -1910,7 +1899,7 @@ Private Sub txtDRRemarks_KeyPress(KeyAscii As Integer)
    End If
 End Sub
 Private Sub LoadInventory()
-SetInventory
+SetDRInventory
 strsql = "SELECT * from InventoryTemp ORDER By InvID": CommandExecute
     lvwInv.ListItems.Clear
     With mmsADORst
@@ -2152,8 +2141,7 @@ End Sub
 '--------------------------------------------------------------------------------------
 Private Sub cmdCancel_Click()
 On Error GoTo LocalError
-  
-  If EncodeMode = "A" Or EncodeMode = "S" Then   '  ------- A D D / S E A R C H
+  If EncodeMode = "A" Or EncodeMode = "S" Or EncodeMode = "SF" Then  '  ------- A D D / S E A R C H / FOUND
     If MsgBox("Are you sure you want to CANCEL?", vbYesNo + vbQuestion, "Exit") = vbYes Then
         ClearFrame
         ClearBox
@@ -2166,15 +2154,15 @@ On Error GoTo LocalError
     End If
   End If
   
-  If EncodeMode = "SF" Then   '  ------- S E A R C H  F O U N D
-     If MsgBox("You want to CANCEL this DR_Number?", vbYesNo + vbQuestion, "Exit") = vbYes Then
-        FormDR.Enabled = False
-        FormLog.txtEncodeMode.Text = "SF"
-        FormLog.Show
-     Else
-        Exit Sub
-     End If
-  End If
+  'If EncodeMode = "SF" Then   '  ------- S E A R C H  F O U N D
+  '   If MsgBox("You want to CANCEL this DR_Number?", vbYesNo + vbQuestion, "Exit") = vbYes Then
+  '      FormDR.Enabled = False
+  '      FormLog.txtEncodeMode.Text = "SF"
+  '      FormLog.Show
+  '   Else
+  '      Exit Sub
+  '   End If
+  'End If
 
 LocalError:
     Exit Sub
@@ -2206,8 +2194,9 @@ Public Sub CancelDR()
 End Sub
 Private Sub cmdPrint_Click()
    If EncodeMode = "A" Or EncodeMode = "E" Then
-      strsql = " Insert Into DRDetails Select * From DRDetailsTemp "
-      CommandExecute
+      strsql = " Insert Into DRDetails Select * From DRDetailsTemp ": CommandExecute
+      strsql = "DELETE * FROM Inventory": CommandExecute
+        strsql = "INSERT INTO Inventory SELECT * FROM InventoryTemp": CommandExecute
    End If
 
    ClearFrame
@@ -2215,8 +2204,7 @@ Private Sub cmdPrint_Click()
    ClearDRDetails
    BoxState False
    ButtonState False
-   cmdNew.Enabled = True
-   cmdSearch.Enabled = True
+   cmdNew.Enabled = True: cmdSearch.Enabled = True
    Load DataEnvironment1
    If DataEnvironment1.rsCommand8.State <> 0 Then DataEnvironment1.rsCommand8.Close
      ReportDR.Refresh
@@ -2478,8 +2466,8 @@ Private Sub ConnectToDB()
 
 End Sub
 Private Sub CommandExecute()
-         mmsAdoCmd.CommandText = strsql
-         Set mmsADORst = mmsAdoCmd.Execute
+    mmsAdoCmd.CommandText = strsql
+    Set mmsADORst = mmsAdoCmd.Execute
 End Sub
 Private Sub LoadDelivered()
 On Error GoTo LocalError
@@ -2631,7 +2619,7 @@ On Error GoTo LocalError
         txtDRQty.Text = !DRQty
         txtDRWeight.Text = !DRWeight
         txtDRCost.Text = !DRCost
-        txtDRAmount.Text = !DRAMount
+        txtDRAmount.Text = !DRAmount
     End With
 LocalError:
     Exit Sub

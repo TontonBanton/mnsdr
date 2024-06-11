@@ -4,17 +4,31 @@ With FormDR.lvwDR
         .ColumnHeaders.Clear
         .ColumnHeaders.Add , , "No", .Width * 0.05
         .ColumnHeaders.Add , , "HDate", .Width * 0.1
-        .ColumnHeaders.Add , , "Area", .Width * 0.15
-        .ColumnHeaders.Add , , "Specie", .Width * 0.15
-        .ColumnHeaders.Add , , "Hill#", .Width * 0.1
-        .ColumnHeaders.Add , , "Bolt#", .Width * 0.1
-        .ColumnHeaders.Add , , "Size", .Width * 0.15
-        .ColumnHeaders.Add , , "Pcs", .Width * 0.15
-        .ColumnHeaders.Add , , "Bd.Ft.", .Width * 0.15
+        .ColumnHeaders.Add , , "Area", .Width * 0.12
+        .ColumnHeaders.Add , , "Specie", .Width * 0.2
+        .ColumnHeaders.Add , , "Hill#", .Width * 0.08
+        .ColumnHeaders.Add , , "Bolt#", .Width * 0.08
+        .ColumnHeaders.Add , , "Size", .Width * 0.12
+        .ColumnHeaders.Add , , "Pcs", .Width * 0.12
+        .ColumnHeaders.Add , , "Bd.Ft.", .Width * 0.12
         .ColumnHeaders.Item(9).Alignment = lvwColumnRight
 End With
 End Sub
 Public Sub SetInventory()
+With FormInv.lvwInv
+    .ColumnHeaders.Clear
+    .ColumnHeaders.Add , , "Date Cut", .Width * 0.13
+    .ColumnHeaders.Add , , "Area", .Width * 0.13
+    .ColumnHeaders.Add , , "Specie", .Width * 0.23
+    .ColumnHeaders.Add , , "Hill", .Width * 0.08
+    .ColumnHeaders.Add , , "Bolt", .Width * 0.08
+    .ColumnHeaders.Add , , "Size", .Width * 0.13
+    .ColumnHeaders.Add , , "Pcs", .Width * 0.07
+    .ColumnHeaders.Add , , "Bd. Ft.", .Width * 0.13
+    .ColumnHeaders.Add , , "#", .Width * 0
+End With
+End Sub
+Public Sub SetDRInventory()
 With FormDR.lvwInv
     .ColumnHeaders.Clear
     .ColumnHeaders.Add , , "Date Cut", .Width * 0.13

@@ -2,21 +2,21 @@ VERSION 5.00
 Begin VB.Form FormSettings 
    BackColor       =   &H80000002&
    Caption         =   "SETTINGS"
-   ClientHeight    =   7680
+   ClientHeight    =   7020
    ClientLeft      =   60
    ClientTop       =   345
    ClientWidth     =   5865
    Icon            =   "FormSettings.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   7680
+   ScaleHeight     =   7020
    ScaleWidth      =   5865
    StartUpPosition =   2  'CenterScreen
    Begin VB.Frame Frame1 
       BackColor       =   &H80000002&
       Height          =   4270
       Left            =   120
-      TabIndex        =   13
+      TabIndex        =   12
       Top             =   600
       Width           =   5595
       Begin VB.TextBox txtAreaLoc 
@@ -31,7 +31,7 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   360
          Left            =   2640
-         TabIndex        =   30
+         TabIndex        =   23
          Top             =   360
          Width           =   2625
       End
@@ -46,12 +46,12 @@ Begin VB.Form FormSettings
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   450
-         Left            =   240
+         Height          =   570
+         Left            =   120
          Style           =   1  'Graphical
          TabIndex        =   8
          Top             =   3620
-         Width           =   5025
+         Width           =   5400
       End
       Begin VB.TextBox txtChecked 
          BeginProperty Font 
@@ -64,10 +64,10 @@ Begin VB.Form FormSettings
             Strikethrough   =   0   'False
          EndProperty
          Height          =   370
-         Left            =   2040
+         Left            =   1800
          TabIndex        =   4
          Top             =   1820
-         Width           =   3225
+         Width           =   3465
       End
       Begin VB.TextBox txtNoted 
          BeginProperty Font 
@@ -80,10 +80,10 @@ Begin VB.Form FormSettings
             Strikethrough   =   0   'False
          EndProperty
          Height          =   370
-         Left            =   2040
+         Left            =   1800
          TabIndex        =   7
          Top             =   3000
-         Width           =   3225
+         Width           =   3465
       End
       Begin VB.TextBox txtAudited 
          BeginProperty Font 
@@ -96,10 +96,10 @@ Begin VB.Form FormSettings
             Strikethrough   =   0   'False
          EndProperty
          Height          =   370
-         Left            =   2040
+         Left            =   1800
          TabIndex        =   6
          Top             =   2600
-         Width           =   3225
+         Width           =   3465
       End
       Begin VB.TextBox txtApproved 
          BeginProperty Font 
@@ -112,10 +112,10 @@ Begin VB.Form FormSettings
             Strikethrough   =   0   'False
          EndProperty
          Height          =   370
-         Left            =   2040
+         Left            =   1800
          TabIndex        =   5
          Top             =   2200
-         Width           =   3225
+         Width           =   3465
       End
       Begin VB.TextBox txtPrepared 
          BeginProperty Font 
@@ -128,10 +128,10 @@ Begin VB.Form FormSettings
             Strikethrough   =   0   'False
          EndProperty
          Height          =   370
-         Left            =   2040
+         Left            =   1800
          TabIndex        =   3
          Top             =   1440
-         Width           =   3225
+         Width           =   3465
       End
       Begin VB.TextBox txtLocation 
          BeginProperty Font 
@@ -165,17 +165,9 @@ Begin VB.Form FormSettings
          Top             =   360
          Width           =   1065
       End
-      Begin VB.Label Label6 
-         BackColor       =   &H80000001&
-         BorderStyle     =   1  'Fixed Single
-         Height          =   620
-         Left            =   120
-         TabIndex        =   28
-         Top             =   3540
-         Width           =   5295
-      End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "AUDITED BY"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -188,13 +180,14 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   10
-         Left            =   500
-         TabIndex        =   23
+         Left            =   240
+         TabIndex        =   19
          Top             =   2650
          Width           =   990
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "CHECKED BY"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -207,13 +200,14 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   9
-         Left            =   500
-         TabIndex        =   22
+         Left            =   240
+         TabIndex        =   18
          Top             =   1920
          Width           =   1080
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "APPROVED BY"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -226,13 +220,14 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   8
-         Left            =   500
-         TabIndex        =   21
+         Left            =   240
+         TabIndex        =   17
          Top             =   2300
          Width           =   1155
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "NOTED BY"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -245,13 +240,14 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   7
-         Left            =   500
-         TabIndex        =   19
+         Left            =   240
+         TabIndex        =   16
          Top             =   3020
          Width           =   825
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "PREPARED BY"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -264,13 +260,14 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   6
-         Left            =   500
-         TabIndex        =   18
+         Left            =   240
+         TabIndex        =   15
          Top             =   1530
          Width           =   1155
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "LOCATION"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -283,13 +280,14 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   1
-         Left            =   360
-         TabIndex        =   16
+         Left            =   240
+         TabIndex        =   14
          Top             =   750
          Width           =   840
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "AREA"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -302,26 +300,10 @@ Begin VB.Form FormSettings
          EndProperty
          Height          =   240
          Index           =   2
-         Left            =   360
-         TabIndex        =   15
+         Left            =   240
+         TabIndex        =   13
          Top             =   400
          Width           =   435
-      End
-      Begin VB.Label Label3 
-         BorderStyle     =   1  'Fixed Single
-         Height          =   975
-         Left            =   120
-         TabIndex        =   17
-         Top             =   200
-         Width           =   5295
-      End
-      Begin VB.Label Label5 
-         BorderStyle     =   1  'Fixed Single
-         Height          =   2145
-         Left            =   120
-         TabIndex        =   20
-         Top             =   1305
-         Width           =   5295
       End
    End
    Begin VB.TextBox txtComp 
@@ -340,38 +322,11 @@ Begin VB.Form FormSettings
       Top             =   200
       Width           =   5595
    End
-   Begin VB.Frame Frame5 
-      BackColor       =   &H80000001&
-      BorderStyle     =   0  'None
-      Height          =   750
-      Left            =   2760
-      TabIndex        =   14
-      Top             =   6900
-      Width           =   2950
-      Begin VB.CommandButton cmdClose 
-         Caption         =   "CLOSE"
-         BeginProperty Font 
-            Name            =   "Arial Narrow"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   500
-         Left            =   120
-         Style           =   1  'Graphical
-         TabIndex        =   12
-         Top             =   120
-         Width           =   2685
-      End
-   End
    Begin VB.Frame Frame2 
       BackColor       =   &H80000002&
       Height          =   2115
       Left            =   120
-      TabIndex        =   24
+      TabIndex        =   20
       Top             =   4750
       Width           =   5600
       Begin VB.CommandButton cmdUser 
@@ -385,12 +340,12 @@ Begin VB.Form FormSettings
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   450
-         Left            =   240
+         Height          =   570
+         Left            =   120
          Style           =   1  'Graphical
          TabIndex        =   11
          Top             =   1400
-         Width           =   5025
+         Width           =   5385
       End
       Begin VB.TextBox txtUser 
          BeginProperty Font 
@@ -426,17 +381,9 @@ Begin VB.Form FormSettings
          Top             =   720
          Width           =   3225
       End
-      Begin VB.Label Label7 
-         BackColor       =   &H80000001&
-         BorderStyle     =   1  'Fixed Single
-         Height          =   620
-         Left            =   120
-         TabIndex        =   29
-         Top             =   1320
-         Width           =   5295
-      End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "USER NAME"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -450,12 +397,13 @@ Begin VB.Form FormSettings
          Height          =   240
          Index           =   4
          Left            =   360
-         TabIndex        =   26
+         TabIndex        =   22
          Top             =   450
          Width           =   975
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
+         BackColor       =   &H80000002&
          Caption         =   "PASSWORD"
          BeginProperty Font 
             Name            =   "Arial Narrow"
@@ -469,17 +417,9 @@ Begin VB.Form FormSettings
          Height          =   240
          Index           =   5
          Left            =   360
-         TabIndex        =   25
+         TabIndex        =   21
          Top             =   810
          Width           =   975
-      End
-      Begin VB.Label Label4 
-         BorderStyle     =   1  'Fixed Single
-         Height          =   975
-         Left            =   120
-         TabIndex        =   27
-         Top             =   240
-         Width           =   5295
       End
    End
 End
@@ -498,7 +438,7 @@ Private Sub Form_Load()
 End Sub
 Private Sub Form_Unload(Cancel As Integer)
      Unload Me
-     FormMainMenu.cmdExit.SetFocus
+     FormMainMenu.cmdDR.SetFocus
 End Sub
 
 '-----------------------------------------------------------------
